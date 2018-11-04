@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">HAP ver kaigosya</string>
+    <string name="app_name">HAP 入力モード</string>
+    <string name="app_name2">HAP チャットモード</string>
 </resources>
