@@ -11,10 +11,17 @@ class Radio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_radio)
 
+        button.setOnClickListener { finish() }
+
         radioGroup.setOnCheckedChangeListener { group, checkedId ->
             zikan1.text = findViewById<RadioButton>(checkedId).text
-            zikan2.text = findViewById<RadioButton>(checkedId).text
-            zijan3.text = findViewById<RadioButton>(checkedId).text
         }
+        radioGroup.setOnCheckedChangeListener { group, checkedId ->
+            zikan2.text = findViewById<RadioButton>(checkedId).text
+        }
+        radioGroup.setOnCheckedChangeListener { group, checkedId ->
+            ziakn3.text = findViewById<RadioButton>(checkedId).text
+        }
+
     }
 }
